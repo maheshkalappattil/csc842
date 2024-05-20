@@ -42,5 +42,5 @@ dns_mon.py requires following packages
 
   
 # Resources
-Scapy DNS packet layers - https://scapy.readthedocs.io/en/latest/api/scapy.layers.dns.html
-UrlHaus API acess - https://urlhaus-api.abuse.ch/#urlinfo
+* Scapy DNS packet layers - https://scapy.readthedocs.io/en/latest/api/scapy.layers.dns.html
+* UrlHaus API acess - https://urlhaus-api.abuse.ch/#urlinfo
