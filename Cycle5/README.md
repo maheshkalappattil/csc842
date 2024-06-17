@@ -43,8 +43,8 @@ This tool is golang based hence uses go runtime. It can be also compiled as a st
 # Running the tool
 export the shodan API key (get the key using dsu email) as env var SHODAN_KEY
 
-export SHODAN_KEY=<API_KEY>
-go run home_mon.go -asn AS23122 [-cve CVE-2014-0160]
+1. export SHODAN_KEY=<API_KEY>
+2. go run home_mon.go -asn AS23122 [-cve CVE-2014-0160]
 
 # Resources
 * shodan - https://www.shodan.io
