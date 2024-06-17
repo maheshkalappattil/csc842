@@ -41,7 +41,10 @@ This tool is golang based hence uses go runtime. It can be also compiled as a st
 * Incoroporate streaming APIs
 
 # Running the tool
-go run home_mon.go -asn AS23122 [ -cve CVE-2014-0160]
+export the shodan API key (get the key using dsu email) as env var SHODAN_KEY
+
+export SHODAN_KEY=<API_KEY>
+go run home_mon.go -asn AS23122 [-cve CVE-2014-0160]
 
 # Resources
 * shodan - https://www.shodan.io
