@@ -35,7 +35,7 @@ def select_DNS(pkt):
             urlhaus_reference = info.get('urlhaus_reference')
             for key, val in black_lists.items():
                 if val != 'not listed':
-                    print(black_lists)
+                    #print(black_lists)
                     print(Fore.RED + f'flagged malware! reference: {urlhaus_reference}')
                     print(Style.RESET_ALL)
                     return
