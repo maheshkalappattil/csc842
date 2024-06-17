@@ -41,7 +41,7 @@ This tool is golang based hence uses go runtime. It can be also compiled as a st
 * Incoroporate streaming APIs
 
 # Running the tool
-go run home_mon.go -asn AS23122
+go run home_mon.go -asn AS23122 [ -cve CVE-2014-0160]
 
 # Resources
 * shodan - https://www.shodan.io
