@@ -37,4 +37,6 @@ This tool is golang based hence uses go runtime. It can be also compiled as a st
 ./server
 
 # Resources
-* shodan - https://www.shodan.io
+* Go wth Gmail Workspace - https://developers.google.com/gmail/api/quickstart/go
+* VirusTotal - https://www.virustotal.com/gui/home/upload
+* Swagger - https://swagger.io/
