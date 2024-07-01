@@ -1,0 +1,58 @@
+consumes:
+  - application/json
+info:
+  description: DD HTTPS server in Go with Swagger endpoints definition.
+  title: go-rest-api
+  version: 0.1.0
+produces:
+  - application/json
+schemes:
+  - http
+swagger: "2.0"
+
+paths:
+#  /healthz:
+#    get:
+#      operationId: checkHealth
+#      produces:
+#        - text/plain
+#      responses:
+#        '200':
+#          description: OK message.
+#          schema:
+#            type: string
+#            enum:
+#              - OK
+
+  /dd/scanall:
+    post:
+      description: scans all unread mails!
+      responses:
+        200:
+          description: Returns the greeting.
+          schema:
+            type: string
+        400:
+          description: Invalid characters were provided.
+  /dd/scanone:
+    post:
+      description: scans given email thread!
+      responses:
+        200:
+          description: Returns the greeting.
+          schema:
+            type: object
+            properties:
+              action:
+                type: object
+                description: action
+                properties:
+                  notification:
+                    type: object
+                    description: notification
+                    properties:
+                      text:
+                        type: string
+        400:
+          description: Invalid characters were provided.
+
