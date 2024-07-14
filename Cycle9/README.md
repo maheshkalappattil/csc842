@@ -1,6 +1,6 @@
 # Gmail Scanner (End-to-end implementation)
 
-Gmail Scanner now functions end-to-end with Cycle9, with a front end json and Golang based backend service running on a cloud VM.
+Gmail Scanner now functions end-to-end with Cycle9, with a front end plugin and Golang based backend service running on a cloud VM.
 which does the analysis.
 
 # DESCRIPTION
