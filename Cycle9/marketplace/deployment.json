@@ -1,0 +1,22 @@
+{
+  "oauthScopes": ["https://www.googleapis.com/auth/gmail.addons.execute", "https://www.googleapis.com/auth/gmail.modify", "https://www.googleapis.com/auth/gmail.labels"],
+  "addOns": {
+    "common": {
+      "name": "dd",
+      "logoUrl": "https://lh3.googleusercontent.com/-Ukp7iAEfWks/Y4Vv37MrlDI/AAAAAAAAABI/HqLIHeLA8-8iekmjB3t-oJsXLcXD7Iq5gCNcBGAsYHQ/s400/policy_FILL0_wght400_GRAD0_opsz48.png"
+    },
+    "gmail": {
+      "contextualTriggers": [{
+        "unconditional": {
+        },
+        "onTriggerFunction": "https://thedreamslab.net:5556/dd/scanone"
+      }],
+      "primaryColor": "#9bc4a4",
+      "secondaryColor": "#c9d1c2"
+    },
+    "drive": {
+    },
+    "calendar": {
+    }
+  }
+}

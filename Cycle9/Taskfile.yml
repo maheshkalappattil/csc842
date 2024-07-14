@@ -1,0 +1,13 @@
+version: "3"
+
+tasks:
+  buildimage:
+    desc: Build the go-build image
+    cmds:
+      - docker build -t cycle7-go-build-image -f Dockerfile.build .
+
+  build:
+    desc: Deploy the app to gcp
+    cmds:
+      - rm -f bin/cycle7-server
+      - docker run -v /Users/mkalappattil/GolandProjects/Cycle7:/app/Cycle7 cycle7-go-build-image "env GOPATH=/home/ubuntu/csc842/Cycle7 GOOS=linux GOARCH=amd64 go build -o bin/server internal/main/main.go internal/main/structs.go internal/main/helper.go internal/main/url.go internal/main/http.go internal/main/card.go"

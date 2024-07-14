@@ -1,0 +1,6 @@
+FROM golang:1.19
+
+ENV GOPATH /usr/local/go
+RUN echo PATH="${PATH}:${GOPATH}" >> /root/.bashrc
+WORKDIR /app/Cycle7
+ENTRYPOINT [ "/bin/bash", "-l", "-c" ]
